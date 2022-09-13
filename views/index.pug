@@ -1,0 +1,60 @@
+//- index.pug
+doctype html
+html
+  head
+    title Aarti's Dance Website
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+       ul 
+          #logo 
+             img(src="/static/img/logo.png")
+             | ADA
+          li #[a(href="/") Home]
+          li #[a(href="/") About]
+          li #[a(href="/") Services]
+          li #[a(href="/") Class Info]
+          li #[a(href="/") Contact Us]
+
+    section#introSection 
+        div Welcome to Aarti's Dance Academy 
+        div.small Eat Sleep Dance Repeat
+    
+    section#missionSection 
+        h2 Our Mission
+        .card 
+           h3 Dance Perfection
+           div.card-box 
+              div.card-img 
+                  img(src="/static/img/img6.png")
+              div.card-content 
+                  p This the best dance academy of the Universe
+        .card 
+           h3 Dance the way you like
+           div.card-box 
+              div.card-img 
+                  img(src="/static/img/img4.png")
+              div.card-content 
+                  p This the best dance academy of the Universe
+        .card 
+           h3 Expert Teaching
+           div.card-box 
+              div.card-img 
+                  img(src="/static/img/img8.png")
+              div.card-content 
+                  p This the best dance academy of the Universe
+
+    section#sponsorsSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/Img/tlogo2.png", alt="sponsor Image", class="spImage") 
+            img(src="/static/Img/tlogo3.png", alt="sponsor Image", class="spImage") 
+            img(src="/static/Img/tlogo4.png", alt="sponsor Image", class="spImage") 
+            img(src="/static/Img/tlogo5.png", alt="sponsor Image", class="spImage") 
+            img(src="/static/Img/applelogo.png", alt="sponsor Image", class="spImage") 
+
+    footer#footer 
+        | Copyright © 2022 AartiAcademy.com | All Rights Reserved
+    script
+      include ../static/index.js
